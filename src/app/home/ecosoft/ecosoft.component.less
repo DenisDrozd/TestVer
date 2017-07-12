@@ -1,0 +1,130 @@
+.navbar {
+  &__content {
+    background-color: #c1e2bf;
+  }
+  &__nav-list-active:after {
+    border-bottom: 10px dashed #c1e2bf;
+  }
+}
+
+.textbar {
+  background-color: #acd8aa;
+
+  &__layout {
+    display: none;
+  }
+}
+
+.gallery {
+  &__wrap {
+    &-big {
+      background: url('/assets/images/ecosoft/ecosoft__imagewrap-big.png') no-repeat 50% 50%;
+    }
+
+    &-small {
+      background: url('/assets/images/ecosoft/ecosoft__imagewrap-small.png') no-repeat 50% 50%;
+    }
+  }
+}
+
+.quote {
+  background-color: #acd8aa;
+
+  &__icon {
+    background: url('/assets/images/ecosoft/ecosoft__quote-icon.png') no-repeat 50% 50%;
+  }
+}
+
+.column {
+  background: url('/assets/images/ecosoft/ecosoft__column-bg.png') no-repeat 50% 50%;
+  background-size: cover;
+  &__item {
+    flex: 1 1 33%;
+    background-color: #ffffff;
+    height: 400px;
+    width: 100%;
+    margin: 10px;
+
+    &-icon {
+      display: block;
+      width: 200px;
+      height: 110px;
+      margin: 30px auto 0;
+    }
+
+    &-title {
+      width: 200px;
+      margin: 0 auto 17px;
+      font-weight: 700;
+      font-size: 17px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 50px;
+    }
+
+    &-text {
+      display: block;
+      font-size: 13px;
+      width: 230px;
+      margin: 0 auto;
+    }
+
+    &:nth-child(1) {
+      .column__item-icon {
+        background: url('/assets/images/ecosoft/ecosoft__column-icon-first.png') no-repeat 50% 50%;
+      }
+    }
+    &:nth-child(2) {
+      .column__item-icon {
+        background: url('/assets/images/ecosoft/ecosoft__column-icon-second.png') no-repeat 50% 50%;
+      }
+    }
+    &:nth-child(3) {
+      .column__item-icon{
+        background: url('/assets/images/ecosoft/ecosoft__column-icon-third.png') no-repeat 50% 50%;
+      }
+    }
+  }
+}
+
+.action {
+  &__title {
+    color: #acd8aa;
+    font-weight: 400;
+    letter-spacing: .05em;
+  }
+
+  &__subtitle {
+    color: #0d1e34;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: #0d1e34;
+  }
+}
+
+.features {
+  &__item {
+    &-title {
+      border-color: #acd8aa;
+    }
+    &:nth-child(1) {
+      .features__item-icon {
+        background: url('/assets/images/ecosoft/ecosoft__features-first.png') no-repeat 50% 50%;
+      }
+    }
+    &:nth-child(2) {
+      .features__item-icon {
+        background: url('/assets/images/ecosoft/ecosoft__features-second.png') no-repeat 50% 50%;
+      }
+    }
+    &:nth-child(3) {
+      .features__item-icon{
+        background: url('/assets/images/ecosoft/ecosoft__features-third.png') no-repeat 50% 50%;
+      }
+    }
+  }
+}

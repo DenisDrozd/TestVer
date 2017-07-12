@@ -1,0 +1,64 @@
+.textbar {
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__wrap {
+    max-width: 1130px;
+    padding: 40px;
+    &-text {
+      max-width: 850px;
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 18px;
+      text-align: center;
+      line-height: 1.5em;
+    }
+
+    &-btn {
+      position: relative;
+      margin: 30px auto 0;
+      display: flex;
+      width: 160px;
+      height: 32px;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      text-transform: uppercase;
+      font-weight: 600;
+      text-decoration: none;
+      color: #32363f;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 15px;
+
+      &:hover {
+        background-color: #e2e2e2;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        border-right: 1px solid #000000;
+        border-top: 1px solid #000000;
+        transform: rotate(45deg);
+        top: 13px;
+        right: 17px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .textbar {
+    &__wrap {
+      &-text {
+        font-size: 15px;
+      }
+    }
+  }
+}

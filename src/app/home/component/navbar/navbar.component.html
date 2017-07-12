@@ -1,0 +1,29 @@
+<div class="navbar">
+  <div class="navbar__nav">
+    <ul class="navbar__nav-list">
+      <li class="navbar__nav-list-wrap">
+        <a routerLink="/arctic"
+           routerLinkActive="navbar__nav-list-active"
+           class="navbar__nav-list-link">Arctic</a>
+      </li>
+      <li class="navbar__nav-list-wrap">
+        <a routerLink="/muse"
+           routerLinkActive="navbar__nav-list-active"
+           class="navbar__nav-list-link">Muse</a>
+      </li>
+      <li class="navbar__nav-list-wrap">
+        <a routerLink="/ecosoft"
+           routerLinkActive="navbar__nav-list-active"
+           class="navbar__nav-list-link">Ecosoft</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="navbar__content">
+  <div class="navbar__content-wrap">
+    <span class="navbar__content-text">
+      <ng-content></ng-content>
+    </span>
+  </div>
+</div>
+

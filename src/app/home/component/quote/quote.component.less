@@ -1,0 +1,38 @@
+.quote {
+  &__wrap {
+    max-width: 1130px;
+    min-height: 330px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__icon {
+    padding-top: 10px;
+    display: block;
+    width: 200px;
+    height: 170px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 0;
+  }
+
+  &__text {
+    max-width: 730px;
+    margin: 0 auto;
+    color: #ffffff;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .quote {
+    &__wrap {
+      padding: 0 30px;
+    }
+  }
+}
