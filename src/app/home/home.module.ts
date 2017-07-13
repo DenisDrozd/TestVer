@@ -15,8 +15,6 @@ import { ColumnComponent } from './component/column/column.component';
 import { ActionComponent } from './component/action/action.component';
 import { FeaturesComponent } from './component/features/features.component';
 
-import { SliderComponent } from './component/slider/slider.component';
-
 @NgModule({
   imports: [
     HomeRoutingModule,
@@ -32,8 +30,7 @@ import { SliderComponent } from './component/slider/slider.component';
     QuoteComponent,
     ColumnComponent,
     ActionComponent,
-    FeaturesComponent,
-    SliderComponent
+    FeaturesComponent
   ]
 })
 export class HomeModule { }
